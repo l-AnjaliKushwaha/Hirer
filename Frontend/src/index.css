@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#scroller::-webkit-scrollbar {
+    display: none;
+}
+
+#scroller {
+    animation-name: animation;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: 15s;
+}
+
+@keyframes animation {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+#job::-webkit-scrollbar {
+    display: none;
+}
+
+/* #job{
+    scrollbar-color: #007 #dadada;
+    scrollbar-width:thin;
+} */
+
+
+* {
+    font-family: 'gilroy';
+}
+
+.scroll::-webkit-scrollbar {
+    display: none;
+}
